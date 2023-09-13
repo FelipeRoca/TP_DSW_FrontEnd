@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
+   mostrarClave() {
+    const passwordInput = document.getElementById('exampleInputPassword1') as HTMLInputElement;
+
+    if (passwordInput.type === 'password') {
+      passwordInput.type = 'text';
+    } else {
+      passwordInput.type = 'password';
+    }
+  }
+
 }
+
