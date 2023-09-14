@@ -1,76 +1,84 @@
-<!--<body>
-    <div>
-        <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand">RESEÑAS TURISTICAS</a>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Lugar" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-              </form>
-            </div>
-          </nav>
-    </div>
-</body> -->
-<body>
-  <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-    <!-- barra de navegacion-->
-    <nav class="navbar bg-body-tertiary">
-      <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1">RESEÑAS TURISTICAS</span>
-      </div>
-    </nav>
-  </nav>
 
-  <br /><br /><br />
+<body>
+  
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+     <!-- barra de navegacion-->
+      <nav class="navbar bg-body-tertiary">
+       <div class="container-fluid">
+         <span class="navbar-brand mb-0 h1">RESEÑAS TURISTICAS</span>
+       </div>
+     </nav>
+   </nav>
+
+  
 
   <h1 class="display-1">Iniciar Sesion</h1>
 
-  <form>
-    <!-- ingresar email y contrasenia-->
-    <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label"
-        >Correo electronico</label
-      >
-      <input
-        type="email"
-        class="form-control"
-        id="exampleInputEmail1"
-        aria-describedby="emailHelp"
-        required="true"
-        placeholder="ejemplo@hotmail.com"
-      />
-      <div id="emailHelp" class="form-text">
-        Nunca compartiremos su correo electronico
-      </div>
+  
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+
+        <form>
+          <!-- ingresar email y contrasenia-->
+
+          <div  style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <div class="mb-3" >
+              <label for="exampleInputEmail1" class="form-label" style="display: flex; justify-content: center;">Correo electronico</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                required="true"
+                placeholder="ejemplo@hotmail.com"
+                
+              />
+              <div id="emailHelp" class="form-text">
+                Nunca compartiremos su correo electronico
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin-top: 50px;">
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label" >Contraseña</label>
+        
+              <input
+                type="password"
+                class="form-control col"
+                id="exampleInputPassword1"
+                required="true"
+              />
+
+              <button (click)="mostrarClave()" id="password" type="button">
+                <span class="fa fa-eye-slash icon col"></span>
+              </button>
+            </div>
+
+          </div>
+
+          
+
+
+            <div style="justify-content: center; text-align: center;" >
+                  <button type="submit" class="btn btn-primary submit">Iniciar Sesion</button>
+
+                  <button
+                    type="button"
+                    class="btn btn-light button"
+                    routerLink="/registrarse"
+                  >
+                    Registrarse
+                  </button>
+
+            </div>
+          
+      </form>
+
     </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label" style="width: 40%"
-        >Contraseña</label
-      >
 
-      <input
-        type="password"
-        class="form-control col"
-        id="exampleInputPassword1"
-        required="true"
-      />
-      <button (click)="mostrarClave()" id="password" type="button">
-        <span class="fa fa-eye-slash icon col"></span>
-      </button>
-    </div>
 
-    <!-- <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-      <label class="form-check-label" for="exampleCheck1">Mostrar clave</label>
-    </div>  -->
-
-    <button type="submit" class="btn btn-primary submit">Iniciar Sesion</button>
-    <button
-      type="button"
-      class="btn btn-light button"
-      routerLink="/registrarse"
-    >
-      Registrarse
-    </button>
-  </form>
+      
 </body>
