@@ -38,7 +38,6 @@
         aria-describedby="emailHelp"
         required="true"
         placeholder="ejemplo@hotmail.com"
-        style="width: 40%; margin-left: 600px"
       />
       <div id="emailHelp" class="form-text">
         Nunca compartiremos su correo electronico
@@ -48,15 +47,15 @@
       <label for="exampleInputPassword1" class="form-label" style="width: 40%"
         >Contraseña</label
       >
+
       <input
         type="password"
-        class="form-control"
+        class="form-control col"
         id="exampleInputPassword1"
         required="true"
-        style="width: 40%; margin-left: 600px"
       />
       <button (click)="mostrarClave()" id="password" type="button">
-        <span class="fa fa-eye-slash icon"></span>
+        <span class="fa fa-eye-slash icon col"></span>
       </button>
     </div>
 
@@ -64,14 +63,11 @@
       <input type="checkbox" class="form-check-input" id="exampleCheck1" />
       <label class="form-check-label" for="exampleCheck1">Mostrar clave</label>
     </div>  -->
-  
-    <button type="submit" class="btn btn-primary" style="margin-left: 900px">
-      Iniciar Sesion
-    </button>
+
+    <button type="submit" class="btn btn-primary submit">Iniciar Sesion</button>
     <button
       type="button"
-      class="btn btn-light"
-      style="margin-left: 10px"
+      class="btn btn-light button"
       routerLink="/registrarse"
     >
       Registrarse
