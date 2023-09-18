@@ -1,0 +1,65 @@
+<body style="background-color: rgb(221, 221, 221); display: block; height: 100vh;">  
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">  <!-- barra de navegacion-->
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid" >
+          <span class="navbar-brand mb-0 h1" style="color: aliceblue;">RESEÑAS TURISTICAS</span>
+  
+  
+        </div>
+      </nav>
+    </nav>
+
+    <div style="text-align: center; margin-top: 20px;">    <!-- titulo-->
+        <h1>Redacte su reseña!</h1>
+    </div>
+
+    <div style="margin: 0 auto; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-top: 50px;">        <!-- formulario-->
+        <div style="width: 600px; text-align: center;">                            <!-- ingresar pais-->
+                <label for="exampleDataList" class="form-label">Pais</label>
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Francia">
+                <datalist id="datalistOptions">
+                <option value="Argentina">
+                <option value="Brasil">
+                <option value="Estados Unidos">
+                <option value="Francia">
+                <option value="Mexico">
+                <option value="China">
+                <option value="España">
+                <option value="Italia">
+                </datalist>
+        </div>
+
+        <div style="width: 600px; text-align: center; margin-top: 50px;">                            <!-- ingresar pais-->
+            <label for="exampleDataList" class="form-label">Ciudad</label>
+            <input class="form-control" id="exampleDataList" placeholder="Paris">
+            
+        </div>
+    
+        <div>
+            <div class="mb-3" style="width: 600px; text-align: center; margin-top: 50px;">
+                <label for="formFileMultiple" class="form-label">Seleccionar imagenes</label>
+                <input class="form-control" type="file" id="formFileMultiple" multiple>
+              </div>
+        </div>
+
+
+        <div class="mb-3" style="width: 600px; text-align: center; margin-top: 50px; ">
+            <label for="exampleFormControlTextarea1" class="form-label">Escriba algo acerca del lugar</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        
+
+
+        <div style=" text-align: center; margin-top: 40px; ">
+            <button type="button" class="btn btn-outline-primary" routerLink="/inicio">Guardar reseña</button>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+</body>
