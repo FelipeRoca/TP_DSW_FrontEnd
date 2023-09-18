@@ -5,6 +5,7 @@ import { SiginComponent } from './modules/sigin/sigin.component';
 import { WelcomeComponent } from './modules/welcome/welcome.component';
 import { RedactarComponent } from './modules/redactar/redactar.component';
 import { InicioComponent } from './modules/inicio/inicio.component';
+import { BuscarResComponent } from './modules/buscar-res/buscar-res.component';
 
 const routes: Routes = [
     {path:'', redirectTo:'/welcome', pathMatch:'full'},
@@ -12,7 +13,8 @@ const routes: Routes = [
     {path: 'registrarse', component:SiginComponent},
     {path: 'welcome', component:WelcomeComponent},
     {path: 'redactar', component:RedactarComponent},
-    {path: 'inicio', component:InicioComponent}
+    {path: 'inicio', component:InicioComponent},
+    {path: 'buscar', component:BuscarResComponent}
 
 ];
 

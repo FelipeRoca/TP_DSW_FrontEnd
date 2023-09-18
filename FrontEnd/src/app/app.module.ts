@@ -8,6 +8,7 @@ import { SiginComponent } from './modules/sigin/sigin.component';
 import { InicioComponent } from './modules/inicio/inicio.component';
 import { WelcomeComponent } from './modules/welcome/welcome.component';
 import { RedactarComponent } from './modules/redactar/redactar.component';
+import { BuscarResComponent } from './modules/buscar-res/buscar-res.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { RedactarComponent } from './modules/redactar/redactar.component';
     SiginComponent,
     InicioComponent,
     WelcomeComponent,
-    RedactarComponent
+    RedactarComponent,
+    BuscarResComponent
   ],
   imports: [
     BrowserModule,
