@@ -9,6 +9,7 @@ import { InicioComponent } from './modules/inicio/inicio.component';
 import { WelcomeComponent } from './modules/welcome/welcome.component';
 import { RedactarComponent } from './modules/redactar/redactar.component';
 import { BuscarResComponent } from './modules/buscar-res/buscar-res.component';
+import { MisResComponent } from './modules/mis-res/mis-res.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BuscarResComponent } from './modules/buscar-res/buscar-res.component';
     InicioComponent,
     WelcomeComponent,
     RedactarComponent,
-    BuscarResComponent
+    BuscarResComponent,
+    MisResComponent
   ],
   imports: [
     BrowserModule,
