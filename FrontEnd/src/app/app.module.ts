@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,7 @@ import { WelcomeComponent } from './modules/welcome/welcome.component';
 import { RedactarComponent } from './modules/redactar/redactar.component';
 import { BuscarResComponent } from './modules/buscar-res/buscar-res.component';
 import { MisResComponent } from './modules/mis-res/mis-res.component';
+import { MenubarModule } from 'primeng/menubar';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { MisResComponent } from './modules/mis-res/mis-res.component';
   ],
   imports: [
     BrowserModule,
+    MenubarModule,
+    BrowserAnimationsModule,
     AppRoutingModule
   ],
   providers: [],
