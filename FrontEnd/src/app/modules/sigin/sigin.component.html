@@ -1,9 +1,17 @@
 <body style="background-color: rgb(221, 221, 221); display: block; height: 110vh;">  
-  <nav class="navbar bg-body-tertiary"  data-bs-theme="dark">
+  <!--<nav class="navbar bg-body-tertiary"  data-bs-theme="dark">
     <div class="container-fluid">
         <a class="navbar-brand"  style="color: rgb(221, 221, 221);">Reseñas turisticas</a> 
     </div>
-  </nav>
+  </nav> -->
+
+  <div class="card">
+    <p-menubar [model]="items">
+      <ng-template pTemplate="start">
+        <span style="text-align: center; color: black;"> RESEÑAS TURISTICAS </span>
+      </ng-template>
+    </p-menubar>
+  </div>
   
   
   
