@@ -30,21 +30,10 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>gdsadsgf</td>
-                
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
+              <tr *ngFor="let review of reviews">
+                <th scope="row">{{review.id}}<th>
+                <td>{{review.stars}}</td>
+                <td>{{review.description}}</td>
                 
               </tr>
             </tbody> 
