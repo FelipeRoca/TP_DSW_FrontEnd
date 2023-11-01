@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { MenuItem } from 'primeng/api';
+
 
 @Component({
   selector: 'app-login',
@@ -64,4 +65,5 @@ export class LoginComponent {
     }
 
 }
+
 

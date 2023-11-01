@@ -12,6 +12,7 @@ import { RedactarComponent } from './modules/redactar/redactar.component';
 import { BuscarResComponent } from './modules/buscar-res/buscar-res.component';
 import { MisResComponent } from './modules/mis-res/mis-res.component';
 import { MenubarModule } from 'primeng/menubar';
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -22,13 +23,15 @@ import { MenubarModule } from 'primeng/menubar';
     WelcomeComponent,
     RedactarComponent,
     BuscarResComponent,
-    MisResComponent
+    MisResComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     MenubarModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
