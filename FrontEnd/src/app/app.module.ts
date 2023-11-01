@@ -23,7 +23,8 @@ import {HttpClientModule} from '@angular/common/http'
     WelcomeComponent,
     RedactarComponent,
     BuscarResComponent,
-    MisResComponent
+    MisResComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

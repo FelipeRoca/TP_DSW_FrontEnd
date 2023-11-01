@@ -23,8 +23,9 @@
         <table class="table" style="width:90vw; margin-top: 50px;">
             <thead>
               <tr>
+                <th scope="col" >ID reseña</th>
+                <th scope="col">ID Autor</th>
                 <th scope="col" >Estrellas</th>
-                <th scope="col">Autor</th>
                 <th scope="col">Aclaracion</th>
                 
               </tr>
@@ -32,6 +33,7 @@
             <tbody>
               <tr *ngFor="let review of reviews">
                 <th scope="row">{{review.id}}<th>
+                <td>{{review.userId}}</td>
                 <td>{{review.stars}}</td>
                 <td>{{review.description}}</td>
                 
