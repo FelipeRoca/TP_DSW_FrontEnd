@@ -60,10 +60,6 @@ export class LoginComponent {
                 icon: 'pi pi-fw pi-calendar',
                 items: []
             },
-            {
-                label: 'Salir',
-                icon: 'pi pi-fw pi-power-off'
-            }
         ];
     }
 
