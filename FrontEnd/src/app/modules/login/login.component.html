@@ -7,7 +7,7 @@
     </div>
   </nav> -->
 
-  <div class="card">
+  <div class="card" style="border: solid 2px;">
     <p-menubar [model]="items">
       <ng-template pTemplate="start">
         <span style="text-align: center; color: black;"> RESEÑAS TURISTICAS </span>
@@ -25,7 +25,7 @@
 
           <div  style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
             <div class="mb-3" >
-              <label for="exampleInputEmail1" class="form-label" style="display: flex; justify-content: center;">Correo electronico</label
+              <label for="exampleInputEmail1" class="form-label" style="display: flex; justify-content: start; font-family: sans-serif;">Correo electronico</label
               >
               <input
                 type="email"
@@ -36,7 +36,7 @@
                 placeholder="ejemplo@hotmail.com"
                 
               />
-              <div id="emailHelp" class="form-text">
+              <div id="emailHelp" class="form-text" style="font-family: sans-serif;">
                 Nunca compartiremos su correo electronico
               </div>
             </div>
@@ -46,7 +46,7 @@
 
           <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin-top: 50px;">
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label" >Contraseña</label>
+              <label for="exampleInputPassword1" class="form-label" style="font-family: sans-serif;" >Contraseña</label>
         
               <input
                 type="password"
