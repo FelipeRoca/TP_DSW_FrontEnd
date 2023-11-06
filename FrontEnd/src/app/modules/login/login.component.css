@@ -38,4 +38,41 @@ button span{
   font-size: 25px;
 }
 
+.card{
+  border: solid 2px;
+}
 
+.card span{
+  text-align: center; 
+  color: black;
+}
+
+.f-login{
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+}
+
+.f-login-password{
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+  margin-top: 50px;
+}
+
+.form-label{
+  display: flex; 
+  justify-content: start; 
+  font-family: sans-serif;
+}
+
+#emailHelp{
+  font-family: sans-serif;
+}
+
+.botones{
+  justify-content: center; 
+  text-align: center;
+}
