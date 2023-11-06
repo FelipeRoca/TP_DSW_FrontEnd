@@ -10,7 +10,7 @@ import { ResServiceService } from '../services/mis-res-service';
 export class MisResComponent implements OnInit{
 review: any;
  ngOnInit(): void {
-    this.resServiceService.getReviewsByUserId(3).subscribe(reviews => {
+    this.resServiceService.getReviewsByUserId(1).subscribe(reviews => {
       this.reviews = reviews
       console.log(this.reviews)
     })
